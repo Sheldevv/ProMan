@@ -27,3 +27,23 @@ meson-build/
 
 # Linux
 *.part
+
+# Debian packaging
+debian/files
+debian/*.debhelper
+debian/*.log
+debian/.debhelper
+*.deb
+*.ddeb
+*.buildinfo
+*.changes
+
+# Docs
+docs/
+
+# Release tarballs
+*.tar.gz
+*.tar.xz
+
+# Flatpak
+.flatpak-builder/

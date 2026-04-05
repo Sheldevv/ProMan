@@ -1,7 +1,7 @@
 {
   "app-id": "online.sheldi.proman",
   "runtime": "org.gnome.Platform",
-  "runtime-version": "45",
+  "runtime-version": "46",
   "sdk": "org.gnome.Sdk",
   "command": "online.sheldi.proman",
   "finish-args": [
@@ -9,17 +9,29 @@
     "--socket=fallback-x11",
     "--socket=wayland",
     "--filesystem=host",
-    "--filesystem=home"
+    "--filesystem=home",
+    "--share=network"
   ],
   "modules": [
+    {
+      "name": "granite",
+      "buildsystem": "meson",
+      "sources": [
+        {
+          "type": "git",
+          "url": "https://github.com/elementary/granite.git",
+          "tag": "7.8.1"
+        }
+      ]
+    },
     {
       "name": "proman",
       "buildsystem": "meson",
       "sources": [
         {
           "type": "git",
-          "url": "https://github.com/sheldi/ProMan.git",
-          "tag": "v0.1.0"
+          "url": "https://github.com/Sheldevv/ProMan.git",
+          "branch": "main"
         }
       ]
     }

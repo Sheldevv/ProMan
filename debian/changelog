@@ -1,0 +1,9 @@
+proman (0.1.0-1) unstable; urgency=medium
+
+  * Initial release
+  * Basic project management features
+  * Open projects in file manager/terminal
+  * Dark mode support
+  * Settings persistence
+
+ -- Sheldi <sheldi@example.com>  Sat, 04 Apr 2026 22:30:00 +0000

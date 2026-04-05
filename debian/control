@@ -1,0 +1,14 @@
+Source: proman
+Section: devel
+Priority: optional
+Maintainer: Sheldi <sheldi@example.com>
+Build-Depends: debhelper-compat (=13), meson, valac, libgtk-4-dev, libgranite-7-dev, libjson-glib-1.0-dev, libgee-0.8-dev
+Standards-Version: 4.6.0
+Homepage: https://github.com/sheldi/ProMan
+
+Package: proman
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Project Manager for Developers
+ A lightweight, developer-focused project manager to organize
+ and quickly access development projects.
