@@ -1,0 +1,25 @@
+# Maintainer: Sheldi <sheldi@example.com>
+pkgname=proman
+pkgver=0.1.0
+pkgrel=1
+pkgdesc="A Project Manager made by a dev, for devs."
+arch=('x86_64')
+url="https://github.com/Sheldevv/ProMan"
+license=('GPL3')
+depends=('gtk4' 'granite' 'json-glib' 'libgee' 'glib2')
+makedepends=('meson' 'vala' 'ninja')
+source=("$pkgname-$pkgver.tar.gz::https://github.com/Sheldevv/ProMan/archive/v$pkgver.tar.gz")
+sha256sums=('SKIP')
+
+build() {
+  cd "$srcdir/ProMan-$pkgver"
+  meson setup build
+  cd build
+  ninja
+}
+
+package() {
+  cd "$srcdir/ProMan-$pkgver/build"
+  DESTDIR="$pkgdir" ninja install
+  install -Dm644 ../LICENSE "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
+}
