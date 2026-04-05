@@ -1,0 +1,29 @@
+# Build directories
+build/
+builddir/
+meson-build/
+
+# Backup files
+*~
+*.bak
+*.tmp
+*.swp
+
+# IDE files
+.vscode/
+.idea/
+
+# Compiled files
+*.c
+*.o
+*.so
+*.a
+
+# Vala generated files
+*.vala.stamp
+
+# macOS
+.DS_Store
+
+# Linux
+*.part

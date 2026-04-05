@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>@APP_ID@</id>
+
+  <name>Project Manager</name>
+  <summary>A Project Manager made by a dev, for devs.</summary>
+
+  <metadata_license>CC-BY-4.0</metadata_license>
+  <project_license>GPL-3.0-or-later</project_license>
+
+  <description>
+    <p>A Project Manager made by a dev, for devs.</p>
+  </description>
+
+  <launchable type="desktop-id">@APP_ID@.desktop</launchable>
+</component>

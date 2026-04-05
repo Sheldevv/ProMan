@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+  <rect x="3" y="3" width="26" height="26" rx="6" fill="#4A90E2"/>
+  <text x="50%" y="58%" dominant-baseline="middle" text-anchor="middle"
+        font-family="Sans" font-size="14" fill="white" font-weight="bold">
+    PM
+  </text>
+  <circle cx="24" cy="8" r="2" fill="#ffffff" opacity="0.7"/>
+</svg>

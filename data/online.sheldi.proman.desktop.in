@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+
+Name=Project Manager
+Comment=A Project Manager made by a dev, for devs.
+
+Exec=@APP_ID@
+Icon=@APP_ID@
+Terminal=false
+
+Categories=Utility;Development;
+StartupNotify=true

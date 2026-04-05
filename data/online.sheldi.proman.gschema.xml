@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="online.sheldi.proman" path="/online/sheldi/proman/">
+    <key name="dark-mode" type="b">
+      <default>false</default>
+      <summary>Enable dark mode</summary>
+      <description>Whether to use dark theme variant</description>
+    </key>
+    <key name="auto-open-terminal" type="b">
+      <default>false</default>
+      <summary>Auto-open terminal</summary>
+      <description>Automatically open terminal when launching projects</description>
+    </key>
+    <key name="confirm-delete" type="b">
+      <default>true</default>
+      <summary>Confirm before deleting</summary>
+      <description>Show confirmation dialog when deleting projects</description>
+    </key>
+  </schema>
+</schemalist>

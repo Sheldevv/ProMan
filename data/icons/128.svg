@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4A90E2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2E5FA1;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="2" dy="4" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Background with gradient -->
+  <rect x="12" y="12" width="104" height="104" rx="20" fill="url(#grad)" filter="url(#shadow)"/>
+  
+  <!-- "PM" text -->
+  <text x="50%" y="56%" dominant-baseline="middle" text-anchor="middle"
+        font-family="Sans" font-size="48" fill="white" font-weight="bold"
+        letter-spacing="2">
+    PM
+  </text>
+  
+  <!-- Decorative elements -->
+  <circle cx="96" cy="32" r="8" fill="#ffffff" opacity="0.5"/>
+  <rect x="88" y="84" width="16" height="16" rx="4" fill="#ffffff" opacity="0.25"/>
+  
+  <!-- Code brackets decoration -->
+  <text x="24" y="96" font-family="Sans" font-size="20" fill="#ffffff" opacity="0.3" font-weight="bold">
+    &lt;/&gt;
+  </text>
+</svg>
