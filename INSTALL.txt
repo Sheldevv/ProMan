@@ -1,0 +1,40 @@
+ProMan Installation Instructions
+================================
+
+Option 1: Debian/Ubuntu (.deb)
+-------------------------------
+wget https://github.com/Sheldevv/ProMan/releases/download/v0.1.0/proman_0.1.0_amd64.deb
+sudo dpkg -i proman_0.1.0_amd64.deb
+sudo apt install -f
+
+Option 2: Binary Tarball (Any Linux)
+-------------------------------------
+wget https://github.com/Sheldevv/ProMan/releases/download/v0.1.0/proman-0.1.0-bin.tar.gz
+tar -xzf proman-0.1.0-bin.tar.gz
+cd proman-0.1.0-bin
+./install.sh
+
+Option 3: Build from Source
+---------------------------
+git clone https://github.com/Sheldevv/ProMan.git
+cd ProMan
+./build.sh
+sudo ./install.sh
+
+Option 4: Run without installing
+--------------------------------
+git clone https://github.com/Sheldevv/ProMan.git
+cd ProMan
+meson setup build
+cd build
+ninja
+./src/online.sheldi.proman
+
+Requirements
+------------
+- GTK4 >= 4.0
+- Granite >= 7.0
+- GLib >= 2.70
+
+After installation, run 'online.sheldi.proman' from terminal
+or find it in your application menu.
