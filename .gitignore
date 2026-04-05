@@ -2,31 +2,43 @@
 build/
 builddir/
 meson-build/
+build-*/
 
 # Backup files
 *~
 *.bak
 *.tmp
 *.swp
+*.swo
 
 # IDE files
 .vscode/
 .idea/
+*.code-workspace
 
 # Compiled files
 *.c
 *.o
 *.so
 *.a
+*.la
+*.lo
+*.loT
 
 # Vala generated files
 *.vala.stamp
+*.c
+*.h
 
 # macOS
 .DS_Store
+.AppleDouble
+.LSOverride
 
 # Linux
 *.part
+*.orig
+*.rej
 
 # Debian packaging
 debian/files
@@ -37,6 +49,7 @@ debian/.debhelper
 *.ddeb
 *.buildinfo
 *.changes
+debian/tmp/
 
 # Docs
 docs/
@@ -44,6 +57,15 @@ docs/
 # Release tarballs
 *.tar.gz
 *.tar.xz
+*.tar.bz2
 
 # Flatpak
 .flatpak-builder/
+flatpak-build/
+
+# Test files
+test-*
+*_test
+
+# Logs
+*.log
